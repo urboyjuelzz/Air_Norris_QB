@@ -1,0 +1,154 @@
+/*Joel Ceballos
+CSS Code*/
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+/*Font settings*/
+
+@font-face {
+  font-family: 'Capture_it';
+  src: url('../fonts/Capture-it/Capture_it_2.ttf') format('truetype'),
+      url('../fonts/Capture-it/Capture_it.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FFF_Tusj';
+  src: url('../fonts/FFF-Tusj/FFF_Tusj.ttf') format('truetype');
+  /*font-weight: normal;
+  font-style: normal;*/
+}
+
+@font-face {
+  font-family: 'EraserRegular';
+  src: url('../fonts/Eraser/EraserRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urban';
+  src: url('../fonts/urban_sketch/Urban.ttf') format('truetype');
+}
+/*Font ends*/
+
+
+/*Nav Bar Section*/
+
+#nav_bar {
+  width: 100%;
+  margin-top: 0;
+}
+
+.logo{
+  float: left;
+  width: 58px;
+}
+
+.menu {
+  text-align: center;
+  background-color: #000000;
+  border: 3px solid grey;
+  margin: 0;  
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  z-index: 999;
+}
+
+.menu li{
+  margin: 15px auto;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu a{
+  color: #003cb3;
+  font-family: arial;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.menu a:hover{
+  background-color: #8F8F8F;
+  color: white;
+}
+/*Section end*/
+
+#qb_camp {
+  margin: 0 auto;
+  background-image: url("../img/field_with_lights.jpg");
+  background-repeat:no-repeat;
+  max-width: 200%;
+  background-size: 100%;
+  height: 800px;
+  /*display: inline-block;*/
+}
+
+.header {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.header h1 {
+  margin: 0 auto;
+  font-family: 'EraserRegular';
+  color: grey;
+}
+
+
+/*Theres some space on the right that i cannot figure out! taking off position relative fixes this*/
+.camps {
+  display: inline-flex;
+  /*float: left;*/
+  /*position: relative;*/
+  margin-top: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.single_camp {
+  background-color: rgba(223, 218, 222, 0.5);
+  height: 500px;
+  width: 50%;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.group_camp {
+  background-color: rgba(223, 218, 222, 0.5);
+  height: 500px;
+  width: 50%;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.season_camp {
+  background-color: rgba(223, 218, 222, 0.5);
+  height: 500px;
+  width: 50%;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  background-color: red;
+  border-radius: 8px;
+  font-size: 25px;
+}
